@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+  color: #F0F0F0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250vh;
+}
+
+/* Contenedor principal */
+.container {
+  width: 90%;
+  max-width: 1500px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(2.02);
+}
+
+/* Título */
+h1 {
+  font-size: 2.2rem;
+  color: #00E5FF;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Tabla */
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 20px;
+  text-align: center;
+}
+
+th {
+  background: #00E5FF;
+  color: #121212;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+td {
+  background: rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Botones */
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-btn {
+  background: linear-gradient(90deg, #FFD700, #FFAA00);
+  color: black;
+}
+
+.edit-btn:hover {
+  background: linear-gradient(90deg, #FFAA00, #FFD700);
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(255, 215, 0, 0.4);
+}
+
+.delete-btn {
+  background: linear-gradient(90deg, #FF3D00, #FF6D00);
+  color: white;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(90deg, #FF6D00, #FF3D00);
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(255, 61, 0, 0.4);
+}
+
+/* Diseño responsivo */
+@media (max-width: 368px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
