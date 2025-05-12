@@ -24,7 +24,7 @@ body {
 }
 
 .container:hover {
-  transform: scale(2.02);
+  transform: scale(1.02);
 }
 
 /* Título */
